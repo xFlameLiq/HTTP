@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="css/register.css" />
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <script src="https://kit.fontawesome.com/baf257f71e.js" crossorigin="anonymous"></script>
+ 
+  <title>REGISTRO</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <nav class="nav">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <a href="#" class="logo">(MOBILE PHONE <i class="fa-solid fa-mobile-button"></i>)</a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">INICIAR SESIÓN</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" target="_self" class="nav-link ">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="register.html" class="nav-link ">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="register.html" class="nav-link ">PROVEEDORES</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+ 
+  <form action="register.php" method="post" class="form">
+    <h1 class="title">REGISTRO</h1>
+    <!--<div>
+      <label for="id" class="title-id">ID: </label>
+      <input type="text" name="id" id="id" required placeholder="Ingrese un ID" />
+    </div>-->
+    <div>
+      <label for="nombre">Nombre:</label>
+      <input class="box" type="text" name="nombre" id="nombre" required placeholder="Ingrese un nombre" />
+    </div>
+    <div>
+      <label for="apellido">Apellido:</label>
+      <input class="box" type="text" name="apellido" id="apellido" required placeholder="Ingrese un apellido" />
+    </div>
+    <div>
+      <label for="direccion">Direccion</label>
+      <input class="box" type="text" name="direccion" id="direccion" required placeholder="Ingrese una direccion" />
+    </div>
+    <div>
+      <label for="telefono">Teléfono: </label>
+      <input class="box" type="tel" name="telefono" id="telefono" required placeholder="Ingrese un teléfono" />
+    </div>
+    <div>
+      <label for="sexo">Sexo: </label>
+      <input class="box" type="text" name="sexo" id="sexo" required placeholder="Ingrese el sexo" />
+    </div>
+    <div>
+      <label for="correo">Email:</label>
+      <input class="box" type="email" name="correo" id="correo" required placeholder="Ingrese un email" />
+    </div>
+    <div>
+      <label for="contrasena">Contraseña:</label>
+      <input class="box" type="password" name="contrasena" id="contrasena" required placeholder="Ingrese una contraseña" />
+    </div>
+    
+    <button class="btn" type="submit" name="registrar" id="registrar">Registrar</button>
+  </form>
+  <footer class="footer">
+    <div class="footer-general">
+        <div class="footer-about">
+            <h4>NOSOTROS</h4>
+            <p>Empresa dedicada a la venta de dispositivos moviles para que cualquier persona pueda adquirir un nuevo telefono que se adapte a las necesidades de cada uno.
+            </p>
+        </div>
+        <div class="footer-logo">
+            <h4>LOGO</h4>
+            <a href="#" class="logo">(<i class="fa-solid fa-mobile-button"></i>)</a>
+        </div>
+        <div class="footer-media">
+            <h4>SIGUENOS</h4>
+            <ul class="icon">
+                <li>
+                    <a href="https://github.com/xFlameLiq/WEB-DEVELOPMENT"><i class="fa-brands fa-github"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </footer>
+  <script>
+
+    const selectElement = function(element) {
+        return document.querySelector(element);
+    }
+
+
+    let menuToggle = selectElement('.menu-toggle');
+    let body = selectElement('body');
+
+    menuToggle.addEventListener('click', function(){
+        body.classList.toggle('open');
+    })
+
+</script>
+</body>
+
+</html>
