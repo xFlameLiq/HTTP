@@ -38,7 +38,7 @@ if(!($recuperarDato == $_POST['correo'])) {
 else {
     echo "<script>
         alert('Error, ya existe el correo');
-        location.href = 'register.html';
+        location.href = '../register.html';
     </script>";
 }
 

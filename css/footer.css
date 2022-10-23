@@ -4,6 +4,8 @@
     height: 20rem;
     background-color: black;
     display: flex;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-general {
@@ -36,7 +38,7 @@
     color: #fff;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     .footer .footer-general {
         width: 100%;
         grid-template-columns: repeat(1,1fr);
