@@ -59,11 +59,12 @@
                         echo '<li class="nav-item">
                     <a href="login.html" class="nav-link">INICIAR SESION</a>
                                 </li>';
+                        echo '                    <li class="nav-item">
+                        <a href="register.html" class="nav-link ">REGISTRARSE</a>
+                    </li>';
                     }
                     ?>
-                    <li class="nav-item">
-                        <a href="register.html" class="nav-link ">REGISTRARSE</a>
-                    </li>
+
                     <li class="nav-item">
                         <a href="#" class="nav-link">CONTACTO</a>
                     </li>
