@@ -11,7 +11,7 @@
 
         echo "<script>
         alert('LOGUEADO CORRECTAMENTE');
-        location.href = '../index.html';
+        location.href = '../index.php';
     </script>";
 
     

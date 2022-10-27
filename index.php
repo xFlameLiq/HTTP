@@ -1,3 +1,23 @@
+<?php
+    session_start();
+    include('php/conexion.php');
+    if(isset($_SESSION['correo'])){
+        $sesion = true;
+
+        $identificador = $_SESSION['correo'];
+        $buscarUsuario = $con->query("SELECT * FROM user WHERE correo='$identificador'");
+
+        $row = $buscarUsuario->fetch_array();
+
+        $usuario = $row['nombre'];
+        $type = $row['userType'];
+    }
+
+    else {
+        $sesion = false;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,9 +41,26 @@
                 </div>
                 <a href="#" class="logo">(MOBILE PHONE <i class="fa-solid fa-mobile-button"></i>)</a>
                 <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="login.html" class="nav-link">INICIAR SESIÓN</a>
-                    </li>
+                    <?php if($sesion == true) {
+                        echo '<li class="nav-item">
+                    <a href="php/logout.php" class="nav-link">CERRAR SESION</a>
+                                </li>';
+                                if($type == 0) {
+                                    echo '<li class="nav-item">
+                                    <a href="productos.html" class="nav-link">PRODUCTOS</a>
+                                                </li>';
+                                }
+                                if($type == 1) {
+                                    echo '<li class="nav-item">
+                                    <a href="#" class="nav-link">PANEL DE ADMINISTRADOR</a>
+                                                </li>';
+                                }
+                    } else {
+                        echo '<li class="nav-item">
+                    <a href="login.html" class="nav-link">INICIAR SESION</a>
+                                </li>';
+                    }
+                    ?>
                     <li class="nav-item">
                         <a href="register.html" class="nav-link ">REGISTRARSE</a>
                     </li>
