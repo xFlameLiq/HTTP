@@ -64,7 +64,6 @@
                     </li>';
                     }
                     ?>
-
                     <li class="nav-item">
                         <a href="#" class="nav-link">CONTACTO</a>
                     </li>
@@ -153,9 +152,10 @@
     <footer class="footer">
         <div class="footer-general">
             <div class="footer-about">
-                <h4>NOSOTROS</h4>
-                <p>Empresa dedicada a la venta de dispositivos moviles para que cualquier persona pueda adquirir un nuevo telefono que se adapte a las necesidades de cada uno.
-                </p>
+                <h4></h4>
+                <p>© 2022 MOBILE PHONE Inc. Derechos Reservados. Distribuidor autorizado.</p>
+                <!--<p>Empresa dedicada a la venta de dispositivos moviles para que cualquier persona pueda adquirir un nuevo telefono que se adapte a las necesidades de cada uno. 
+                </p> -->
             </div>
             <div class="footer-logo">
                 <h4>LOGO</h4>

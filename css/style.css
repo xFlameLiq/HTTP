@@ -436,12 +436,20 @@ header {
     color: #fff;
 }
 
+.footer .footer-general .footer-about p {
+    font-size: 1.1rem;
+}
+
 @media screen and (max-width:800px) {
     .footer .footer-general {
         width: 100%;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 1.9rem;
         padding: 2rem;
+    }
+    
+    .footer .footer-general .footer-about p {
+        text-align: center;
     }
 
     .footer .footer-logo {
