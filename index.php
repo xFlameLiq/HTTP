@@ -52,7 +52,7 @@
                                 }
                                 if($type == 1) {
                                     echo '<li class="nav-item">
-                                    <a href="#" class="nav-link">PANEL DE ADMINISTRADOR</a>
+                                    <a href="registrarProducto.html" class="nav-link">PANEL DE ADMINISTRADOR</a>
                                                 </li>';
                                 }
                     } else {
