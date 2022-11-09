@@ -20,7 +20,7 @@ h1 {
 .container-prod {
     width: 120rem;
     height: 50rem;
-    margin: 15rem auto 31.7rem;
+    margin: 15rem auto 12rem;
     padding: 30px 50px;
     border: 1.5px solid rgb(188, 198, 201);
     backdrop-filter: blur(3px);
