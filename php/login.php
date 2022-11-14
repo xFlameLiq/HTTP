@@ -10,14 +10,14 @@
         $_SESSION['correo'] = $email;
 
         echo "<script>
-        alert('LOGUEADO CORRECTAMENTE');
+        alert('Logueado correctamente');
         location.href = '../index.php';
     </script>";
 
     
     } else {
         echo "<script>
-        alert('Error DATOS NO VALIDADOS');
+        alert('Error, datos no validos');
         location.href = '../login.html';
     </script>";
 
