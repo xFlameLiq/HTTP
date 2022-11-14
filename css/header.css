@@ -24,6 +24,11 @@ section {
     overflow: hidden;
 }
 
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
 a {
     text-decoration: none;
 }
