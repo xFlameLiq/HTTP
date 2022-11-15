@@ -38,11 +38,31 @@ $query=mysqli_query($con,$sql);
     </div>
   </header>
 
+<form action="" method="GET">
+  <div class="buscador">
+    <div>
+      <label for="buscador">Buscador:</label>
+      <input class="box" type="text" name="buscador" id="buscador" placeholder="Ingrese la marca a buscar" />
+    </div>
+    <div class="btn-buscador">
+        <button type="submit" name="buscar" id="buscar">Buscar</button>
+    </div>
+  </div>
+</form>
+<?php 
+    if(isset($_GET['buscar'])) {
+        $busqueda=$_GET['buscador'];
+        $consulta = $con->query("SELECT * FROM products WHERE modelo LIKE '%$busqueda%'");
 
+        while($row = $consulta->fetch_array()) {
+            echo $row['modelo'];
+        }
+    }
+?>
+   
+  </div>
   <div class="edit-container">
-
   <h1 class="title">MODIFICAR PRODUCTOS</h1>
-
     <div class="products">
     <?php 
         while($row=mysqli_fetch_array($query)) {
@@ -65,7 +85,7 @@ $query=mysqli_query($con,$sql);
                 <a href="php/delete.php?id=<?php echo $row['id'] ?>">
                     <button>Eliminar</button>
                 </a>
-                <a href="php/update.php?id=<?php echo $row['id'] ?>">
+                <a href="actualizarProducto.php?id=<?php echo $row['id'] ?>">
                     <button>Modificar</button>
                 </a>
             </div>
@@ -79,6 +99,8 @@ $query=mysqli_query($con,$sql);
     </div>
    
   </div>
+
+ 
 
 
   <footer class="footer">
@@ -121,3 +143,4 @@ $query=mysqli_query($con,$sql);
 </body>
 
 </html>
+

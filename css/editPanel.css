@@ -37,10 +37,61 @@ button {
     cursor: pointer;
 }
 
+.buscador {
+    display: flex;
+    width: 45rem;
+    height: 4rem;
+    margin-top: 14rem;
+    margin-left: 10rem;
+}
+
+.buscador>div  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.buscador>div label {
+    display: block;
+    font-size: 2rem;
+}
+.buscador>div input {
+    all: unset;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 20rem;
+    border: 1px solid #ccc;
+}
+
+.buscador > .btn-buscador {
+    margin-left: 1rem;
+}
+
+.buscador button {
+    border: none;
+    width: 10rem;
+    padding: 5px 20px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 0 auto;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buscador button:hover {
+    outline: 1px solid cadetblue;
+    background-color: #fff;
+    color: cadetblue;
+}
+
+
 .edit-container {
     width: 100%;
     max-width: 95%;
-    margin: 15rem auto 16.7rem;
+    margin: 2rem auto 16.7rem;
     padding: 30px 50px;
     background-color: rgb(255, 255, 255);
 }
@@ -93,4 +144,5 @@ button {
     background-color: #fff;
     color: cadetblue;
 }
+
 

@@ -16,7 +16,17 @@ h1 {
     color: cadetblue;
 }
 
+.title {
+    margin-bottom: 2rem;
+}
 
+.id {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: large;
+}
 
 .form {
     width: 500px;
@@ -26,22 +36,6 @@ h1 {
     backdrop-filter: blur(3px);
     border-radius: 24px;
     box-shadow: 5px 5px 3rem;
-}
-
-/* MODIFICO UNICAMENTE EL FORM DEL LOGIN PARA ARREGLAR EL FOOTER*/
-.form-login {
-    margin: 22.55rem auto 32.7rem;
-}
-/* MODIFICO UNICAMENTE EL FORM DEL REGISTRO PARA ARREGLAR EL FOOTER*/
-
-.form-register {
-    margin: 22.55rem auto 11.2rem;
-}
-
-/* MODIFICO UNICAMENTE EL FORM DEL REGISTRO DE PRODUCTOS ARREGLAR EL FOOTER*/
-
-.form-register-productos {
-    margin: 14.9rem auto 6rem;
 }
 
 /* MODIFICO UNICAMENTE EL FORM DEL UPDATE DE PRODUCTOS ARREGLAR EL FOOTER*/

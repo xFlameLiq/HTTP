@@ -12,6 +12,7 @@
     $desc = $_POST['descripcion'];
     $pic = $_POST['foto'];
     $quantity = $_POST['cantidad'];
+    
     $insert = "INSERT INTO products (id, marca, modelo, precio, procesador, memoriaRAM, memoriaROM, bateria, descripcion, foto, cantidad)
     values ('0','$brand', '$model', '$price', '$processor', '$mram','$mrom','$battery','$desc','$pic','$quantity')";
 
