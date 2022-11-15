@@ -42,31 +42,57 @@ $query=mysqli_query($con,$sql);
   <div class="buscador">
     <div>
       <label for="buscador">Buscador:</label>
-      <input class="box" type="text" name="buscador" id="buscador" placeholder="Ingrese la marca a buscar" />
+      <input class="box" type="text" name="buscador" id="buscador" placeholder="Ingrese el modelo a buscar" />
     </div>
     <div class="btn-buscador">
         <button type="submit" name="buscar" id="buscar">Buscar</button>
     </div>
   </div>
 </form>
-<?php 
-    if(isset($_GET['buscar'])) {
-        $busqueda=$_GET['buscador'];
-        $consulta = $con->query("SELECT * FROM products WHERE modelo LIKE '%$busqueda%'");
 
-        while($row = $consulta->fetch_array()) {
-            echo $row['modelo'];
-        }
-    }
-?>
+
+
    
-  </div>
+ 
   <div class="edit-container">
   <h1 class="title">MODIFICAR PRODUCTOS</h1>
     <div class="products">
     <?php 
+    if(isset($_GET['buscar'])) {
+        $busqueda=$_GET['buscador'];
+        $consulta = $con->query("SELECT * FROM products WHERE modelo LIKE '%$busqueda%'");
+
+        while($row = $consulta->fetch_array()) { ?>
+            <div class="registers">
+            <div class ="content-prod">
+            <p>Identificador <span><?php echo $row['id']?></span></p>
+            <p>Foto: <span><?php echo $row['foto']?></span></p>
+            <p>Marca: <span><?php echo $row['marca']?></span></p>
+            <p>Modelo: <span><?php echo $row['modelo']?></span></p>
+            <p>Precio: <span><?php echo $row['precio']?></span></p>
+            <p>Procesador: <span><?php echo $row['procesador']?></span></p>
+            <p>Memoria RAM: <span><?php echo $row['memoriaRAM']?></span></p>
+            <p>Almacenamiento: <span><?php echo $row['memoriaROM']?></span></p>
+            <p>Bateria: <span><?php echo $row['bateria']?></span></p>
+            <p>Descripcion: <span><?php echo $row['descripcion']?></span></p>
+            </div>
+
+            <div class="buttons">
+                <a href="php/delete.php?id=<?php echo $row['id'] ?>">
+                    <button>Eliminar</button>
+                </a>
+                <a href="actualizarProducto.php?id=<?php echo $row['id'] ?>">
+                    <button>Modificar</button>
+                </a>
+            </div>
+            </div>
+    <?php    
+        }
+    } else {
         while($row=mysqli_fetch_array($query)) {
-    ?>
+
+?>
+       
          <div class="registers">
             <div class ="content-prod">
             <p>Identificador <span><?php echo $row['id']?></span></p>
@@ -95,10 +121,10 @@ $query=mysqli_query($con,$sql);
 
          <?php 
         }
+    }
     ?>
-    </div>
-   
-  </div>
+     </div>
+</div>
 
  
 
