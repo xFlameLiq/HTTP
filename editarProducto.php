@@ -65,16 +65,16 @@ $query=mysqli_query($con,$sql);
         while($row = $consulta->fetch_array()) { ?>
             <div class="registers">
             <div class ="content-prod">
-            <p>Identificador <span><?php echo $row['id']?></span></p>
-            <p>Foto: <span><?php echo $row['foto']?></span></p>
-            <p>Marca: <span><?php echo $row['marca']?></span></p>
-            <p>Modelo: <span><?php echo $row['modelo']?></span></p>
-            <p>Precio: <span><?php echo $row['precio']?></span></p>
-            <p>Procesador: <span><?php echo $row['procesador']?></span></p>
-            <p>Memoria RAM: <span><?php echo $row['memoriaRAM']?></span></p>
-            <p>Almacenamiento: <span><?php echo $row['memoriaROM']?></span></p>
-            <p>Bateria: <span><?php echo $row['bateria']?></span></p>
-            <p>Descripcion: <span><?php echo $row['descripcion']?></span></p>
+            <p class="text">IDENTIFICADOR <span><?php echo $row['id']?></span></p>
+            <p class="text">Foto: <span><?php echo $row['foto']?></span></p>
+            <p class="text">Marca: <span><?php echo $row['marca']?></span></p>
+            <p class="text">Modelo: <span><?php echo $row['modelo']?></span></p>
+            <p class="text">Precio: <span><?php echo $row['precio']?></span></p>
+            <p class="text">Procesador: <span><?php echo $row['procesador']?></span></p>
+            <p class="text">Memoria RAM: <span><?php echo $row['memoriaRAM']?></span></p>
+            <p class="text">Almacenamiento: <span><?php echo $row['memoriaROM']?></span></p>
+            <p class="text">Bateria: <span><?php echo $row['bateria']?></span></p>
+            <p class="text">Descripcion: <span><?php echo $row['descripcion']?></span></p>
             </div>
 
             <div class="buttons">
@@ -95,16 +95,16 @@ $query=mysqli_query($con,$sql);
        
          <div class="registers">
             <div class ="content-prod">
-            <p>Identificador <span><?php echo $row['id']?></span></p>
-            <p>Foto: <span><?php echo $row['foto']?></span></p>
-            <p>Marca: <span><?php echo $row['marca']?></span></p>
-            <p>Modelo: <span><?php echo $row['modelo']?></span></p>
-            <p>Precio: <span><?php echo $row['precio']?></span></p>
-            <p>Procesador: <span><?php echo $row['procesador']?></span></p>
-            <p>Memoria RAM: <span><?php echo $row['memoriaRAM']?></span></p>
-            <p>Almacenamiento: <span><?php echo $row['memoriaROM']?></span></p>
-            <p>Bateria: <span><?php echo $row['bateria']?></span></p>
-            <p>Descripcion: <span><?php echo $row['descripcion']?></span></p>
+            <p class="text">IDENTIFICADOR <span><?php echo $row['id']?></span></p>
+            <p class="text">Foto: <span><?php echo $row['foto']?></span></p>
+            <p class="text">Marca: <span><?php echo $row['marca']?></span></p>
+            <p class="text">Modelo: <span><?php echo $row['modelo']?></span></p>
+            <p class="text">Precio: <span><?php echo $row['precio']?></span></p>
+            <p class="text">Procesador: <span><?php echo $row['procesador']?></span></p>
+            <p class="text">Memoria RAM: <span><?php echo $row['memoriaRAM']?></span></p>
+            <p class="text">Almacenamiento: <span><?php echo $row['memoriaROM']?></span></p>
+            <p class="text">Bateria: <span><?php echo $row['bateria']?></span></p>
+            <p class="text">Descripcion: <span><?php echo $row['descripcion']?></span></p>
             </div>
 
             <div class="buttons">

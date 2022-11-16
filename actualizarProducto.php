@@ -46,38 +46,38 @@ $row=mysqli_fetch_array($query);
   <form action="php/update.php" method="post" class="form form-update-productos">
     <h1 class="title">ACTUALIZAR PRODUCTO</h1>
     <label class="id">Identificador <span><?php echo $row['id']?></span></label>
-    <input type="hidden" name="id" id="id" value="<?php echo $row['id']?>">
+    <input type="hidden" name="id" id="id" value="<?php echo $row['id']?>" />
     <div>
       <label for="marca">Marca: </label>
-      <input class="box" type="text" name="marca" id="marca" placeholder="Actualizar marca" value="<?php echo $row ['marca'] ?>" />
+      <input class="box" type="text" name="marca" id="marca" placeholder="Actualizar marca" value="<?php echo $row ['marca'] ?>" maxlength="15"/>
     </div>
     <div>
       <label for="modelo">Modelo: </label>
-      <input class="box" type="text" name="modelo" id="modelo" placeholder="Actualizar modelo" value="<?php echo $row ['modelo'] ?>" />
+      <input class="box" type="text" name="modelo" id="modelo" placeholder="Actualizar modelo" value="<?php echo $row ['modelo'] ?>" maxlength="15"/>
     </div>
     <div>
       <label for="precio">Precio: </label>
-      <input class="box" type="text" name="precio" id="precio" placeholder="Actualizar precio" value="<?php echo $row ['precio'] ?>" />
+      <input class="box" type="text" name="precio" id="precio" placeholder="Actualizar precio" value="<?php echo $row ['precio'] ?>" maxlength="8"/>
     </div>
     <div>
       <label for="procesador">Procesador: </label>
-      <input class="box" type="text" name="procesador" id="procesador" placeholder="Actualizar procesador" value="<?php echo $row ['procesador'] ?>" />
+      <input class="box" type="text" name="procesador" id="procesador" placeholder="Actualizar procesador" value="<?php echo $row ['procesador'] ?>" maxlength="20"/>
     </div>
     <div>
       <label for="ram">Memoria RAM: </label>
-      <input class="box" type="text" name="ram" id="ram" placeholder="Actualizar la memoria RAM" value="<?php echo $row ['memoriaRAM'] ?>" />
+      <input class="box" type="text" name="ram" id="ram" placeholder="Actualizar la memoria RAM" value="<?php echo $row ['memoriaRAM'] ?>" maxlength="5"/>
     </div>
     <div>
       <label for="rom">Memoria ROM: </label>
-      <input class="box" type="text" name="rom" id="rom" placeholder="Actualizar la memoria ROM" value="<?php echo $row ['memoriaROM'] ?>" />
+      <input class="box" type="text" name="rom" id="rom" placeholder="Actualizar la memoria ROM" value="<?php echo $row ['memoriaROM'] ?>" maxlength="8"/>
     </div>
     <div>
       <label for="bateria">Bateria: </label>
-      <input class="box" type="text" name="bateria" id="bateria" placeholder="Actualizar la capacidad de bateria" value="<?php echo $row ['bateria'] ?>" />
+      <input class="box" type="text" name="bateria" id="bateria" placeholder="Actualizar la capacidad de bateria" value="<?php echo $row ['bateria'] ?>" maxlength="8"/>
     </div>
     <div>
         <label for="descripcion">Descripcion: </label>
-        <input class="box" type="text" name="descripcion" id="descripcion" placeholder="Actualizar la descripcion" value="<?php echo $row ['descripcion'] ?>" />
+        <input class="box" type="text" name="descripcion" id="descripcion" placeholder="Actualizar la descripcion" value="<?php echo $row ['descripcion'] ?>" maxlength="120"/>
     </div>
     <div>
         <label for="foto">Foto: </label>
@@ -85,7 +85,7 @@ $row=mysqli_fetch_array($query);
     </div>
     <div>
         <label for="cantidad">Cantidad: </label>
-        <input class="box" type="text" name="cantidad" id="cantidad" placeholder="Ingrese la nueva cantidad disponible" value="<?php echo $row ['cantidad'] ?>" />
+        <input class="box" type="text" name="cantidad" id="cantidad" placeholder="Ingrese la nueva cantidad disponible" value="<?php echo $row ['cantidad'] ?>" maxlength="3"/>
     </div>
     
     <button class="btn" type="submit" name="registrar" id="registrar">Actualizar</button>

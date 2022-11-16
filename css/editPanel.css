@@ -5,6 +5,7 @@
 }
 
 html {
+    background-color: rgb(220, 220, 220);
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     color: #000;
@@ -89,30 +90,44 @@ button {
 
 
 .edit-container {
-    width: 100%;
-    max-width: 95%;
+    width: 175rem;
+    min-width: 50%;
     margin: 2rem auto 16.7rem;
     padding: 30px 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(220, 220, 220);
+
 }
 
 .edit-container > .products {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 22.5rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 35rem;
+    grid-row-gap: 10rem;
  /*   background-color: rgb(110, 29, 185);*/
 
 }
 
+
+
 .content-prod {
-    height: 25rem;
+    height: 45rem;
    /*  background-color: red;*/
+   border: 1.5px solid rgb(105, 105, 105);
+   padding: 1rem 1rem 1rem;
+   border-radius: 10px;
     overflow-y: auto;
     margin-bottom: 3rem;
+    
+   
+}
+
+.registers {
+    width: 30rem;
+
 }
 
 .edit-container > .products > div {
-    max-width: 25rem;
+    max-width: 30rem;
     overflow-wrap: break-word;
 }
 
@@ -138,11 +153,26 @@ button {
     margin-bottom: 1.5rem;
 }
 
+.text {
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 2rem;
+}
 
 .edit-container button:hover {
     outline: 1px solid cadetblue;
     background-color: #fff;
     color: cadetblue;
+}
+@media screen and (max-width: 1500px) {
+    .edit-container > .products {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 5rem;
+        grid-row-gap: 10rem;
+   
+    
+    }
 }
 
 

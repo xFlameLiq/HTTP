@@ -20,7 +20,7 @@
     if($ir){
         echo "<script>
         alert('Se ha registrado con exito');
-        location.href = '../productos.html';
+        location.href = '../panelAdministrador.html';
     </script>";
     } else {
         echo "Se encontró un error";
