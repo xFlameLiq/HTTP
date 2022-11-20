@@ -69,6 +69,10 @@ header {
     z-index: 1500;
 }
 
+.menu-toggle .fa-times {
+    display: none;
+}
+
 .fa-times {
     display: none;
 }

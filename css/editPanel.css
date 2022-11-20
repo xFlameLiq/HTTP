@@ -5,7 +5,7 @@
 }
 
 html {
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(233, 233, 233);
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     color: #000;
@@ -94,7 +94,7 @@ button {
     min-width: 50%;
     margin: 2rem auto 16.7rem;
     padding: 30px 50px;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(233, 233, 233);
 
 }
 
