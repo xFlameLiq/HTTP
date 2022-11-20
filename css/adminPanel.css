@@ -80,5 +80,6 @@ img {
     outline: 1px solid cadetblue;
     background-color: #fff;
     color: cadetblue;
+    transform: scale(0.9);
 }
 
