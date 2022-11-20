@@ -38,7 +38,7 @@ $query=mysqli_query($con,$sql);
     </div>
   </header>
 
-<form action="" method="GET">
+<form class="search-form" action="" method="GET">
   <div class="buscador">
     <div>
       <label for="buscador">Buscador:</label>
@@ -55,8 +55,10 @@ $query=mysqli_query($con,$sql);
    
  
   <div class="edit-container">
-  <h1 class="title">MODIFICAR PRODUCTOS</h1>
+    <h1 class="title">MODIFICAR PRODUCTOS</h1>
+
     <div class="products">
+
     <?php 
     if(isset($_GET['buscar'])) {
         $busqueda=$_GET['buscador'];
@@ -92,7 +94,6 @@ $query=mysqli_query($con,$sql);
         while($row=mysqli_fetch_array($query)) {
 
 ?>
-       
          <div class="registers">
             <div class ="content-prod">
             <p class="text">IDENTIFICADOR <span><?php echo $row['id']?></span></p>
@@ -118,7 +119,6 @@ $query=mysqli_query($con,$sql);
                    
 
          </div>
-
          <?php 
         }
     }
