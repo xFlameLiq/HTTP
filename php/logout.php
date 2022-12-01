@@ -7,3 +7,4 @@
     alert("Sesion cerrada");
     location.href = '../index.php';
 </script>
+

@@ -410,7 +410,7 @@ header {
     height: 20rem;
     background-color: black;
     display: flex;
-
+    flex-direction: column;
 }
 
 .footer-general {
@@ -418,8 +418,8 @@ header {
     background-color: black;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 2.5rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 50rem;
 }
 
 .footer-about {
@@ -428,6 +428,7 @@ header {
 }
 
 .footer h4 {
+    text-align: center;
     margin-bottom: 1rem;
     font-size: 2rem;
     color: #fff;
@@ -442,9 +443,16 @@ header {
     font-size: 2rem;
     color: #fff;
 }
+.icon, .logo {
+    display: block;
+    text-align: center;
+}
 
 .footer .footer-general .footer-about p {
     font-size: 1.1rem;
+}
+.author-container {
+    margin: 0rem auto;
 }
 
 @media screen and (max-width:800px) {
@@ -465,5 +473,10 @@ header {
 
     .footer .footer-media {
         text-align: center;
+    }
+
+    .footer .author-container {
+        display: flex;
+        background-color: black;
     }
 }

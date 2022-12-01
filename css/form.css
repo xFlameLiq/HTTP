@@ -48,7 +48,8 @@ h1 {
 /* MODIFICO UNICAMENTE EL FORM DEL UPDATE DE PRODUCTOS ARREGLAR EL FOOTER*/
 
 .form-update-productos {
-    margin: 14.9rem auto 6rem;
+    margin: 11.9rem auto 6rem;
+    background-color: red !important;
 }
 
 .form>div  {

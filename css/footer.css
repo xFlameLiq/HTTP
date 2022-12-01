@@ -4,8 +4,7 @@
     height: 20rem;
     background-color: black;
     display: flex;
-    position: relative;
-    bottom: 0;
+    flex-direction: column;
 }
 
 .footer-general {
@@ -13,8 +12,8 @@
     background-color: black;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 2.5rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 50rem;
 }
 
 .footer-about {
@@ -23,6 +22,7 @@
 }
 
 .footer h4 {
+    text-align: center;
     margin-bottom: 1rem;
     font-size: 2rem;
     color: #fff;
@@ -37,22 +37,26 @@
     font-size: 2rem;
     color: #fff;
 }
+.icon, .logo {
+    display: block;
+    text-align: center;
+}
 
 .footer .footer-general .footer-about p {
     font-size: 1.1rem;
 }
+.author-container {
+    margin: 0rem auto;
+}
 
-
-
-
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
     .footer .footer-general {
         width: 100%;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 1.9rem;
         padding: 2rem;
     }
-
+    
     .footer .footer-general .footer-about p {
         text-align: center;
     }
@@ -64,4 +68,10 @@
     .footer .footer-media {
         text-align: center;
     }
+
+    .footer .author-container {
+        display: flex;
+        background-color: black;
+    }
 }
+

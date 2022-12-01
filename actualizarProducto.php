@@ -92,27 +92,27 @@ $row=mysqli_fetch_array($query);
   </form>
 
   <footer class="footer">
-    <div class="footer-general">
-      <div class="footer-about">
-        <h4></h4>
-        <p>© 2022 MOBILE PHONE Inc. Derechos Reservados. Distribuidor autorizado.</p>
-        <!--<p>Empresa dedicada a la venta de dispositivos moviles para que cualquier persona pueda adquirir un nuevo telefono que se adapte a las necesidades de cada uno. 
-        </p> -->
-    </div>
-        <div class="footer-logo">
-            <h4>LOGO</h4>
-            <a href="#" class="logo">(<i class="fa-solid fa-mobile-button"></i>)</a>
+        <div class="footer-general">
+                <!--<p>Empresa dedicada a la venta de dispositivos moviles para que cualquier persona pueda adquirir un nuevo telefono que se adapte a las necesidades de cada uno. 
+                </p> -->
+            <div class="footer-logo">
+                <h4>LOGO</h4>
+                <a href="#" class="logo">(<i class="fa-solid fa-mobile-button"></i>)</a>
+            </div>
+            <div class="footer-media">
+                <h4>SIGUENOS</h4>
+                <ul class="icon">
+                    <li>
+                        <a href="https://github.com/xFlameLiq/WEB-DEVELOPMENT"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-media">
-            <h4>SIGUENOS</h4>
-            <ul class="icon">
-                <li>
-                    <a href="https://github.com/xFlameLiq/WEB-DEVELOPMENT"><i class="fa-brands fa-github"></i></a>
-                </li>
-            </ul>
+        <div class="author-container">
+            <p class="author">© 2022 MOBILE PHONE Inc. Derechos Reservados. Distribuidor autorizado.</p>
         </div>
-    </div>
-  </footer>
+
+      </footer>
   <script>
 
     const selectElement = function(element) {
