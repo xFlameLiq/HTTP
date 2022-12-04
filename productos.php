@@ -48,13 +48,34 @@ $query=mysqli_query($con,$sql);
         </nav>
     </div>
   </header>
+
+
+
  
   <div class="container-prod">
-    <h1 class="title">PRODUCTOS</h1>
+    <div class="header-prod-container">
+            <div class="title-container">
+                <h1 class="title">PRODUCTOS</h1>
+            </div>
+            <div class="search-container">
+                <form class="search-form" action="" method="GET">
+                     <div class="buscador">
+                        <div>
+                            <label for="buscador">Buscador:</label>
+                             <input class="box" type="text" name="buscador" id="buscador" placeholder="Ingrese el modelo a buscar" />
+                        </div>
+                        <div class="btn-buscador"><button type="submit" name="buscar" id="buscar">Buscar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     <div class="content-devices">
     <?php    
-
-        while($row=mysqli_fetch_array($query)) {
+    if(isset($_GET['buscar'])) {
+        $busqueda=$_GET['buscador'];
+        $consulta = $con->query("SELECT * FROM products WHERE modelo LIKE '%$busqueda%'");
+        while($row = $consulta->fetch_array()) {
 
 ?>
         <div class="products">
@@ -78,8 +99,35 @@ $query=mysqli_query($con,$sql);
             </div>
         </div>
         <?php 
-        }
+            }
+        } else {
+            while($row=mysqli_fetch_array($query)) {
+
     ?>
+     <div class="products">
+            <div class="devices">
+                <p class="text">IDENTIFICADOR <span><?php echo $row['id']?></span></p>
+                <p class="text"><img src="assets/telefonos/<?php echo $row['foto']?>" class="photo" alt=""></p>
+                <p class="text">Marca: <span><?php echo $row['marca']?></span></p>
+                <p class="text">Modelo: <span><?php echo $row['modelo']?></span></p>
+                <p class="text">Precio: <span><?php echo $row['precio']?>$</span></p>
+                <p class="text">Procesador: <span><?php echo $row['procesador']?></span></p>
+                <p class="text">Memoria RAM: <span><?php echo $row['memoriaRAM']?></span></p>
+                <p class="text">Almacenamiento: <span><?php echo $row['memoriaROM']?></span></p>
+                <p class="text">Bateria: <span><?php echo $row['bateria']?></span></p>
+                <p class="text">Descripcion: <span><?php echo $row['descripcion']?></span></p>
+            </div>
+            <div class="buttons">
+                <form action="carrito.php" method="GET">
+                    <button type="submit" name="carrito" value="<?php echo $row['id']?>">Agregar al carrito</button>
+                </form>
+                   
+            </div>
+        </div>
+        <?php 
+            }
+        }
+        ?>
     </div> 
 </div>
 
