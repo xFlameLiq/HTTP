@@ -47,7 +47,7 @@
                                 </li>';
                                 if($type == 0) {
                                     echo '<li class="nav-item">
-                                    <a href="productos.html" class="nav-link">PRODUCTOS</a>
+                                    <a href="productos.php" class="nav-link">PRODUCTOS</a>
                                                 </li>';
                                 }
                                 if($type == 1) {

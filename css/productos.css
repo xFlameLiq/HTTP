@@ -18,9 +18,18 @@ h1 {
     margin-bottom: 2rem;
 }
 
+p {
+    font-size: 1.2rem !important;
+}
+
+.text {
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
 
 .title {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 .imagen {
@@ -31,22 +40,27 @@ h1 {
 
 .container-prod {
     width: 120rem;
-    height: 50rem;
-    margin: 15rem auto 12rem;
-    padding: 30px 50px;
+    height: 65rem;
+    margin: 9.3rem auto 2.7rem;
+    padding: 30px 20px;
     border: 1.5px solid rgb(188, 198, 201);
     backdrop-filter: blur(3px);
     border-radius: 24px;
     box-shadow: 5px 5px 3rem;
-    overflow-y: scroll;
     background-color: rgb(233, 233, 233);
 
 }
-.container-prod> .products {
+
+.content-devices {
+    height: 50rem;
+
+}
+
+.container-prod .content-devices {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 2.5rem;
-    align-items: flex-end;
+    overflow-y: scroll;
 }
 
 .content-products {
@@ -86,3 +100,24 @@ h1 {
     color: cadetblue;
 }
 
+.photo {
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+
+.products {
+    width: 33rem;
+    height: 45rem;
+    margin-bottom: 2rem;
+    border: 1.5px solid rgb(105, 105, 105);
+    padding: 1rem 1rem 1rem;
+}
+
+
+.devices {
+    text-align: center;
+    margin-bottom: 3rem;
+    height: 35rem;
+}

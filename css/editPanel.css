@@ -117,7 +117,7 @@ button {
 
 
 .content-prod {
-    height: 45rem;
+    height: 50rem;
    /*  background-color: red;*/
    border: 1.5px solid rgb(105, 105, 105);
    padding: 1rem 1rem 1rem;
@@ -164,6 +164,12 @@ button {
     margin-bottom: 1rem;
     text-align: center;
     line-height: 2rem;
+}
+
+.photo {
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 1rem;
 }
 
 .edit-container button:hover {

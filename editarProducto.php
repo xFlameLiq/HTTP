@@ -5,7 +5,6 @@ $sql="SELECT * FROM products";
 $query=mysqli_query($con,$sql);
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +30,7 @@ $query=mysqli_query($con,$sql);
             <a href="#" class="logo">(MOBILE PHONE <i class="fa-solid fa-mobile-button"></i>)</a>
             <ul class="nav-list">
             <li class="nav-item">
-                <a href="index.php" target="_self" class="nav-link ">HOME</a>
+                <a href="panelAdministrador.html" target="_self" class="nav-link ">VOLVER</a>
             </li>
             </ul>
         </nav>
@@ -68,10 +67,10 @@ $query=mysqli_query($con,$sql);
             <div class="registers">
             <div class ="content-prod">
             <p class="text">IDENTIFICADOR <span><?php echo $row['id']?></span></p>
-            <p class="text">Foto: <span><?php echo $row['foto']?></span></p>
+            <p class="text"><img src="assets/telefonos/<?php echo $row['foto']?>" class="photo" alt=""></p>
             <p class="text">Marca: <span><?php echo $row['marca']?></span></p>
             <p class="text">Modelo: <span><?php echo $row['modelo']?></span></p>
-            <p class="text">Precio: <span><?php echo $row['precio']?></span></p>
+            <p class="text">Precio: <span><?php echo $row['precio']?>$</span></p>
             <p class="text">Procesador: <span><?php echo $row['procesador']?></span></p>
             <p class="text">Memoria RAM: <span><?php echo $row['memoriaRAM']?></span></p>
             <p class="text">Almacenamiento: <span><?php echo $row['memoriaROM']?></span></p>
@@ -98,10 +97,10 @@ $query=mysqli_query($con,$sql);
          <div class="registers">
             <div class ="content-prod">
             <p class="text">IDENTIFICADOR <span><?php echo $row['id']?></span></p>
-            <p class="text">Foto: <span><?php echo $row['foto']?></span></p>
+            <p class="text"><img src="assets/telefonos/<?php echo $row['foto']?>" class="photo" alt=""></p>
             <p class="text">Marca: <span><?php echo $row['marca']?></span></p>
             <p class="text">Modelo: <span><?php echo $row['modelo']?></span></p>
-            <p class="text">Precio: <span><?php echo $row['precio']?></span></p>
+            <p class="text">Precio: <span><?php echo $row['precio']?>$</span></p>
             <p class="text">Procesador: <span><?php echo $row['procesador']?></span></p>
             <p class="text">Memoria RAM: <span><?php echo $row['memoriaRAM']?></span></p>
             <p class="text">Almacenamiento: <span><?php echo $row['memoriaROM']?></span></p>

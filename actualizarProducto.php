@@ -81,7 +81,7 @@ $row=mysqli_fetch_array($query);
     </div>
     <div>
         <label for="foto">Foto: </label>
-        <input class="box" type="text" name="foto" id="foto" value="<?php echo $row ['foto'] ?>"/>
+        <input class="box" type="file" name="foto" id="foto" value="<?php echo $row ['foto'] ?>"/>
     </div>
     <div>
         <label for="cantidad">Cantidad: </label>

@@ -1,3 +1,10 @@
+<?php 
+include('php/conexion.php');
+$con=conectar();
+$sql="SELECT * FROM products";
+$query=mysqli_query($con,$sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +33,9 @@
                     <a href="index.php" target="_self" class="nav-link ">HOME</a>
                 </li>
                 <li class="nav-item">
+                    <a href="carrito.php" target="_self" class="nav-link ">IR A CARRITO</a>
+                </li>
+                <li class="nav-item">
                     <a href="#" class="nav-link">CONTACTO</a>
                 </li>
                 <li class="nav-item">
@@ -41,34 +51,37 @@
  
   <div class="container-prod">
     <h1 class="title">PRODUCTOS</h1>
+    <div class="content-devices">
+    <?php    
 
-    <div class="products"> 
-        <div class="content-products">
-            <img class="imagen" src="./assets/telefonos/Iphone.jpg" alt="">
-            <p>PRECIO: FREE</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque iusto, eum aperiam ipsum vel exercitationem commodi quia in nam quos doloremque dolor ab expedita veniam fugiat veritatis dolorum praesentium omnis.</p>
-  
-        </div>
-        <div class="content-products">
-            <img class="imagen" src="./assets/telefonos/Motorola.png" alt="">
-            <p>PRECIO: FREE</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque iusto, eum aperiam ipsum vel exercitationem commodi quia in nam quos doloremque dolor ab expedita veniam fugiat veritatis dolorum praesentium omnis.</p>
-        </div>
-        <div class="content-products">
-            <img class="imagen" src="./assets/telefonos/Samsung.jpg" alt="">
-            <p>PRECIO: FREE</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque iusto, eum aperiam ipsum vel exercitationem commodi quia in nam quos doloremque dolor ab expedita veniam fugiat veritatis dolorum praesentium omnis.</p>
-        </div>
-        <div class="content-products">
-            <img class="imagen" src="./assets/telefonos/Xiaomi.png" alt="">
-            <p>PRECIO: FREE</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque iusto, eum aperiam ipsum vel exercitationem commodi quia in nam quos doloremque dolor ab expedita veniam fugiat veritatis dolorum praesentium omnis.</p>
-        </div>
+        while($row=mysqli_fetch_array($query)) {
 
-    </div>
-
-
-  </div>
+?>
+        <div class="products">
+            <div class="devices">
+                <p class="text">IDENTIFICADOR <span><?php echo $row['id']?></span></p>
+                <p class="text"><img src="assets/telefonos/<?php echo $row['foto']?>" class="photo" alt=""></p>
+                <p class="text">Marca: <span><?php echo $row['marca']?></span></p>
+                <p class="text">Modelo: <span><?php echo $row['modelo']?></span></p>
+                <p class="text">Precio: <span><?php echo $row['precio']?>$</span></p>
+                <p class="text">Procesador: <span><?php echo $row['procesador']?></span></p>
+                <p class="text">Memoria RAM: <span><?php echo $row['memoriaRAM']?></span></p>
+                <p class="text">Almacenamiento: <span><?php echo $row['memoriaROM']?></span></p>
+                <p class="text">Bateria: <span><?php echo $row['bateria']?></span></p>
+                <p class="text">Descripcion: <span><?php echo $row['descripcion']?></span></p>
+            </div>
+            <div class="buttons">
+                <form action="carrito.php" method="GET">
+                    <button type="submit" name="carrito" value="<?php echo $row['id']?>">Agregar al carrito</button>
+                </form>
+                   
+            </div>
+        </div>
+        <?php 
+        }
+    ?>
+    </div> 
+</div>
 
 
   <footer class="footer">
