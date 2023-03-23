@@ -65,13 +65,13 @@
                     }
                     ?>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">CONTACTO</a>
+                        <a href="contacto.html" class="nav-link">CONTACTO</a>
                     </li>
                     <li class="nav-item">
-                        <a href="register.html" class="nav-link ">NOSOTROS</a>
+                        <a href="nosotros.html" class="nav-link ">NOSOTROS</a>
                     </li>
                     <li class="nav-item">
-                        <a href="register.html" class="nav-link ">PROVEEDORES</a>
+                        <a href="proveedores.html" class="nav-link ">PROVEEDORES</a>
                     </li>
                 </ul>
             </nav>

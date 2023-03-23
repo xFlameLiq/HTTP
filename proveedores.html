@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/baf257f71e.js" crossorigin="anonymous"></script>
+
+    <title>PROVEEDORES</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="#" class="logo">(MOBILE PHONE <i class="fa-solid fa-mobile-button"></i>)</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.php" target="_self" class="nav-link ">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nosotros.html" class="nav-link ">NOSOTROS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+      </header>
+
+      <div class="prov-container">
+            <div class="list-container">
+                    <h2 class="title">NUESTROS PROVEEDORES CON LOS QUE CONTAMOS</h2>
+                    <ul class="ul">
+                        <li class="item">ASUS</li>
+                        <li class="item">APPLE</li>
+                        <li class="item">XIAOMI</li>
+                        <li class="item">SAMSUNG</li>
+                        <li class="item">MOTOROLA</li>
+                        <li class="item">HUAWEI</li>
+                    </ul>
+            </div>
+      </div>
+
+
+      <footer class="footer">
+        <div class="footer-general">
+                <!--<p>Empresa dedicada a la venta de dispositivos moviles para que cualquier persona pueda adquirir un nuevo telefono que se adapte a las necesidades de cada uno. 
+                </p> -->
+            <div class="footer-logo">
+                <h4>LOGO</h4>
+                <a href="#" class="logo">(<i class="fa-solid fa-mobile-button"></i>)</a>
+            </div>
+            <div class="footer-media">
+                <h4>SIGUENOS</h4>
+                <ul class="icon">
+                    <li>
+                        <a href="https://github.com/xFlameLiq/WEB-DEVELOPMENT"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="author-container">
+            <p class="author">© 2022 MOBILE PHONE Inc. Derechos Reservados. Distribuidor autorizado.</p>
+        </div>
+
+      </footer>
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open');
+        })
+
+    </script>
+
+
+
+</body>
+</html>

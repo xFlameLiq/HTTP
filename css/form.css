@@ -90,3 +90,67 @@ h1 {
     color: cadetblue;
 }
 
+.us-container {
+    padding: 5rem;
+    width: 90rem;
+    margin: 16rem auto 16rem;
+}
+
+.vision {
+    padding: 1rem;
+    width: 50rem;
+    margin: 0rem auto 3rem;
+}
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+.vision > p {
+    line-height: 3rem;
+    font-size: 2rem;
+    text-align: justify;
+}
+.mision > p {
+    line-height: 3rem;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+
+.mision {
+    padding: 1rem;
+    width: 50rem;
+    margin: 0rem auto 0rem;
+}
+
+.contact-container {
+    padding: 5rem;
+    width: 90rem;
+    margin: 17rem auto 17rem;
+}
+
+.prov-container {
+    padding: 5rem;
+    width: 100rem;
+    margin: 24rem auto 24rem;
+}
+
+.list-container {
+    line-height: 3rem;
+    font-size: 2rem;
+    text-align: justify;
+}
+
+.ul {
+    display: flex;
+    justify-content: space-around;
+}
+.item {
+    font-size: 2rem;
+    list-style: none;
+}
+
+.title {
+    margin-bottom: 10rem;
+}
