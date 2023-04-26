@@ -73,6 +73,9 @@
                     <li class="nav-item">
                         <a href="proveedores.html" class="nav-link ">PROVEEDORES</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="http://10.0.0.5/webdav" class="nav-link ">DESCARGAS</a>
+                    </li>
                 </ul>
             </nav>
         </div>
